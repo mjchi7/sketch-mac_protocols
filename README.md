@@ -38,7 +38,9 @@ Sketch book for MAC protocols relevant topics
 ## Difference
 ### CSMA/CD 
 - After sending packet, it will continue to sense the channel to **detect** for collision (by comparing data transmitted and data received on the same channel)
+- Example: Ethernet
 
 ### CSMA/CA
 - After sending packet, it will **not** sense the channel to detect for collision, instead it relies on receiver to send an ACK frame back for acknowledgement. If ACK not receive, it assume collision occured.
 - The collision avoidance is achieved by hand-shaking protocol (RTS/CTS) to "secure" a channel, whereas CSMA/CD do not do that.
+- Example: IEEE 802.11 WiFi
