@@ -44,3 +44,7 @@ Sketch book for MAC protocols relevant topics
 - After sending packet, it will **not** sense the channel to detect for collision, instead it relies on receiver to send an ACK frame back for acknowledgement. If ACK not receive, it assume collision occured.
 - The collision avoidance is achieved by hand-shaking protocol (RTS/CTS) to "secure" a channel, whereas CSMA/CD do not do that.
 - Example: IEEE 802.11 WiFi
+
+# Pure Aloha (https://www.cse.iitk.ac.in/users/dheeraj/cs425/lec04.html)
+- When node has data to send, just send!
+- In a finite amount of time if acknowledge is not received, collision occured! and retry.
