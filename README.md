@@ -39,6 +39,7 @@ Sketch book for MAC protocols relevant topics
 ### CSMA/CD 
 - After sending packet, it will continue to sense the channel to **detect** for collision (by comparing data transmitted and data received on the same channel)
 - Reduce the recovery time of collision (CD will abruptly stop transmission; contrast to CSMA only where transmission will be allowed to finish)
+- Suffers from hidden node problem (consider node like A-B-C. If A and C is transmitting concurrently to B, node A cannot detect collision at the B-C side and node C cannot detect the collision at the A-B side.)
 - Example: Ethernet
 
 ### CSMA/CA
